@@ -14,11 +14,20 @@
 <body>
   
 <div id="symbol_map"></div>
+<div id="bubble_plot"></div>
 
 <script type="text/javascript">
 
   var spec2 = "js/symbol_map.vg.json";
   vegaEmbed('#symbol_map', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script>
+
+<script type="text/javascript">
+
+  var spec1 = "js/bubble_plot.vg.json";
+  vegaEmbed('#bubble_plot', spec1).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
